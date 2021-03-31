@@ -4,10 +4,9 @@ import axios from 'axios';
 class UsersService{
 
     getAllUsers(){
-        console.log('Getting all users in UsersService');
+        console.log('Api call to get users');
         return axios.get(`http://localhost:8080/get-all-users`);
     }
-
     createUser(user){
         console.log('Api call to create user :>> ', user);
         return axios.post(`http://localhost:8080/create-user`, user)
